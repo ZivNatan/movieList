@@ -1,0 +1,83 @@
+
+.main-title{
+    /* margin-left: 20px; */
+}
+.list-tools{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.item-card{
+    display: flex;
+    border-radius: 10px;
+    background-color: #ededed;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+
+}
+.add-btn {
+    max-height: 30px;
+}
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+  }
+.list-wrapper {
+    max-height: 600px;
+    overflow: auto;
+
+}
+.poster-wrapper{
+    height: 200px;
+    width: 150px;
+}
+.poster{
+    width: 100%;
+    height: 100%;
+}
+.card-details{
+    padding-left: 10px;
+    width: calc(100% - 200px);
+}
+.action-btns-wrapper{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    width: 35px;
+    justify-content: space-between;
+}
+.delete-btn{
+    width: 10px;
+    height: 10px;
+    -webkit-appearance: none;
+
+}
+.edit-btn{
+    width: 10px;
+    height: 10px;
+    -webkit-appearance: none;
+
+}
+.edit-btn:hover {
+    cursor: pointer;
+    color:#1ad84c;
+   
+}
+.delete-btn:hover {
+    cursor: pointer;
+    color:#d82019;
+}
+
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem;
+    margin-right: 0;
+}
+
+.modal-header {
+    justify-content: left;
+}
