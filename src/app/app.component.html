@@ -11,10 +11,10 @@
 
   <div class="list-tools">
       <h2 class="main-title">Movies list: </h2>
-      <button class="add-btn btn btn-sm btn-primary" (click)="modalTitle='Add'; formItem = {};"  data-toggle="modal" data-target="#formModel">Add</button>
+      <button class="add-btn btn btn-sm btn-primary" (click)="modalTitle='Add'; formItem = {}; f.submitted = false;"  data-toggle="modal" data-target="#formModel">Add</button>
   </div>
 <div class="list-wrapper" [ngStyle]="{'height': height + 'px'}">
-  <div class="item-card" *ngFor="let item of list; let i = index;  trackBy: i;">
+  <div class="item-card" *ngFor="let item of list; let index = index;  trackBy: index;">
       <div class="poster-wrapper">
         <img [src]="item.Poster" class="poster" >
       </div>
@@ -22,8 +22,8 @@
           <h4 title="{{fixTitle(item.Title)}}" class="truncate">{{fixTitle(item.Title)}}</h4> 
           <span>{{item.Year}}</span>
           <div class="action-btns-wrapper">
-              <div  (click)="editMovie(item,i,'Edit');" type="button" class="fa fa-edit edit-btn" data-toggle="modal" data-target="#formModel"></div>
-              <div (click)="selectedIndex = i" type="button" class="fa fa-trash delete-btn" data-toggle="modal" data-target="#deleteModel"></div>
+              <div  (click)="editMovie(item,index,'Edit');" type="button" class="fa fa-edit edit-btn" data-toggle="modal" data-target="#formModel"></div>
+              <div (click)="selectedIndex = index" type="button" class="fa fa-trash delete-btn" data-toggle="modal" data-target="#deleteModel"></div>
           </div>
       </div>
   </div>

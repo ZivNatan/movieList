@@ -13,6 +13,7 @@ import { AnonymousSubject } from 'rxjs/Subject';
 export class AppComponent implements OnInit {
   title = 'app';
   list: any;
+  index: any;
   selectedIndex: any;
   modalTitle: string;
   formItem: any = {};
